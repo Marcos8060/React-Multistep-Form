@@ -1,7 +1,11 @@
-import React from "react";
+import React,{useContext} from "react";
 import { Button, TextField } from "@material-ui/core";
+import { MultiStepContext } from "../Context";
+
 
 function ThirdStep() {
+  const { setCurrentStep,userData,setUserData } = useContext(MultiStepContext)
+
   return (
     <div>
       <div>
@@ -29,6 +33,9 @@ function ThirdStep() {
         />
       </div>
       <div>
+      <Button onClick={()=> setCurrentStep(2)} variant="contained" color="secondary">
+          Back
+        </Button><span> </span>
         <Button variant="contained" color="primary">
           Next
         </Button>

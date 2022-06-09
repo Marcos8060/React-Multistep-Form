@@ -36,6 +36,7 @@ function App() {
        </Stepper>
        </div>
        {showStep(currentStep)}
+       <br /><br />
        <DisplayData />
     </div>
   );

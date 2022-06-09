@@ -4,7 +4,7 @@ import { MultiStepContext } from "../Context";
 function DisplayData() {
   const { finalData } = useContext(MultiStepContext);
   return (
-    <div>
+    <div className="table-responsive">
       <table class="table">
         <thead>
           <tr>

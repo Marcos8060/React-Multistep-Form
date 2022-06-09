@@ -6,7 +6,7 @@ function ThirdStep() {
     <div>
       <div>
         <TextField
-          label="First name"
+          label="City"
           margin="normal"
           variant="outlined"
           color="secondary"
@@ -14,7 +14,7 @@ function ThirdStep() {
       </div>
       <div>
         <TextField
-          label="Last name"
+          label="Landmark"
           margin="normal"
           variant="outlined"
           color="secondary"
@@ -22,7 +22,7 @@ function ThirdStep() {
       </div>
       <div>
         <TextField
-          label="Contact"
+          label="Postal Code"
           margin="normal"
           variant="outlined"
           color="secondary"

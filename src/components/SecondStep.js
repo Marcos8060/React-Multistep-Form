@@ -6,7 +6,7 @@ function SecondStep() {
     <div>
       <div>
         <TextField
-          label="First name"
+          label="Email"
           margin="normal"
           variant="outlined"
           color="secondary"
@@ -14,7 +14,7 @@ function SecondStep() {
       </div>
       <div>
         <TextField
-          label="Last name"
+          label="Country"
           margin="normal"
           variant="outlined"
           color="secondary"
@@ -22,7 +22,7 @@ function SecondStep() {
       </div>
       <div>
         <TextField
-          label="Contact"
+          label="District"
           margin="normal"
           variant="outlined"
           color="secondary"

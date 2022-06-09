@@ -9,6 +9,8 @@ function SecondStep() {
     <div>
       <div>
         <TextField
+          value={userData['email']}
+          onChange={(e)=> setUserData({...userData, 'email': e.target.value})}
           label="Email"
           margin="normal"
           variant="outlined"
@@ -17,6 +19,8 @@ function SecondStep() {
       </div>
       <div>
         <TextField
+          value={userData['country']}
+          onChange={(e)=> setUserData({...userData, 'country': e.target.value})}
           label="Country"
           margin="normal"
           variant="outlined"
@@ -25,6 +29,8 @@ function SecondStep() {
       </div>
       <div>
         <TextField
+           value={userData['district']}
+           onChange={(e)=> setUserData({...userData, 'district': e.target.value})}
           label="District"
           margin="normal"
           variant="outlined"

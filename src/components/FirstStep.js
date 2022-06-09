@@ -8,6 +8,8 @@ function FirstStep() {
     <div>
       <div>
         <TextField
+          value={userData['firstname']}
+          onChange={(e)=> setUserData({...userData, 'firstname': e.target.value})}
           label="First name"
           margin="normal"
           variant="outlined"
@@ -16,6 +18,8 @@ function FirstStep() {
       </div>
       <div>
         <TextField
+          value={userData['lastname']}
+          onChange={(e)=> setUserData({...userData, 'lastname': e.target.value})}
           label="Last name"
           margin="normal"
           variant="outlined"
@@ -24,6 +28,8 @@ function FirstStep() {
       </div>
       <div>
         <TextField
+          value={userData['contact']}
+          onChange={(e)=> setUserData({...userData, 'contact': e.target.value})}
           label="Contact"
           margin="normal"
           variant="outlined"

@@ -7,6 +7,10 @@ function Context() {
     const [currentStep,setCurrentStep] = useState(1)
     const [userData,setUserData] = useState([])
     const [finalData,setFinalData] = useState([])
+
+    const submitData = ()=>{
+
+    }
   return (
       <MultiStepContext.Provider value={{
           currentStep,
@@ -14,7 +18,8 @@ function Context() {
           userData,
           setUserData,
           finalData,
-          setFinalData
+          setFinalData,
+          submitData
       }}>
           <App />
       </MultiStepContext.Provider>

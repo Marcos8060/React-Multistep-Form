@@ -3,9 +3,11 @@ import FirstStep from './components/FirstStep';
 import SecondStep from './components/SecondStep';
 import ThirdStep from './components/ThirdStep';
 import { Stepper,StepLabel, Step } from '@material-ui/core'
+import { MultiStepContext } from './Context';
+import { useContext } from 'react';
 
 function App() {
-
+  const { currentStep,finalData} = useContext(MultiStepContext)
   function showStep(step){
     switch(step){
       case 1:
@@ -20,7 +22,7 @@ function App() {
     <div className="App">
        <h2>Multi Step Form</h2>
        <div className="center-stepper">
-       <Stepper style={{ width:'18%'}} activeStep='1' orientation='horizontal'>
+       <Stepper style={{ width:'18%'}} activeStep={currentStep -1} orientation='horizontal'>
          <Step>
            <StepLabel></StepLabel>
          </Step>
@@ -32,7 +34,7 @@ function App() {
          </Step>
        </Stepper>
        </div>
-       {showStep(1)}
+       {showStep(currentStep)}
     </div>
   );
 }

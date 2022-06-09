@@ -43,7 +43,7 @@ function ThirdStep() {
           Back
         </Button><span> </span>
         <Button onClick={submitData} variant="contained" color="primary">
-          Next
+          Submit
         </Button>
       </div>
     </div>

@@ -5,6 +5,7 @@ import ThirdStep from './components/ThirdStep';
 import { Stepper,StepLabel, Step } from '@material-ui/core'
 import { MultiStepContext } from './Context';
 import { useContext } from 'react';
+import DisplayData from './components/DisplayData';
 
 function App() {
   const { currentStep,finalData} = useContext(MultiStepContext)
@@ -35,6 +36,7 @@ function App() {
        </Stepper>
        </div>
        {showStep(currentStep)}
+       <DisplayData />
     </div>
   );
 }

@@ -37,7 +37,7 @@ function App() {
        </div>
        {showStep(currentStep)}
        <br /><br />
-       <DisplayData />
+       {finalData.length > 0 ? <DisplayData /> : ''}
     </div>
   );
 }
